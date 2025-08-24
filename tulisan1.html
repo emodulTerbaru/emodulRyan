@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Teori & Tema Literasi Anak – Fase A</title>
+
+<!-- Font ceria & mudah dibaca -->
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#fffaf3;
+  --ink:#222;
+  --muted:#5b5b5b;
+  --brand1:#ff6fb1;
+  --brand2:#ffd166;
+  --brand3:#06d6a0;
+  --brand4:#4cc9f0;
+  --brand5:#b5179e;
+  --card:#ffffff;
+  --ring:#ffe6b7;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0}
+
+body{
+  font-family: "Nunito", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:var(--ink);
+  background:
+    radial-gradient(1200px 500px at -5% -10%, #fff 0%, transparent 60%),
+    radial-gradient(1000px 400px at 105% 0%, #fff 0%, transparent 60%),
+    var(--bg);
+  line-height:1.6;
+  padding:32px 16px 64px;
+}
+
+.container{
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.header{
+  text-align:center;
+  margin-bottom: 20px;
+}
+
+.kid-title{
+  font-family:"Fredoka", sans-serif;
+  font-weight:800;
+  font-size: clamp(28px, 6vw, 52px);
+  line-height:1.05;
+  display:inline-block;
+  padding:10px 20px;
+  border-radius:30px;
+  color:#fff;
+  text-shadow: 0 4px 0 rgba(0,0,0,.12);
+  background: linear-gradient(135deg, var(--brand1), var(--brand5));
+  box-shadow: 0 12px 30px rgba(0,0,0,.08), 0 0 0 8px #ffdfeff0 inset;
+  animation: bob 2.2s ease-in-out infinite;
+}
+@keyframes bob{
+  0%,100%{ transform: translateY(0) }
+  50%{ transform: translateY(-6px) }
+}
+.subtitle{
+  color: var(--muted);
+  margin-top:10px;
+  font-weight:600;
+}
+
+.card{
+  background: var(--card);
+  border:6px solid var(--ring);
+  border-radius:24px;
+  padding:22px;
+  box-shadow: 0 14px 28px rgba(0,0,0,.06);
+}
+
+.lead{
+  font-size: clamp(18px, 2.4vw, 20px);
+  background: #fff6d8;
+  border-left: 8px solid var(--brand2);
+  padding:14px 16px;
+  border-radius: 14px;
+  margin: 10px 0 18px;
+}
+
+.dropcap:first-letter{
+  float:left;
+  font-family:"Fredoka", sans-serif;
+  font-weight:800;
+  font-size: clamp(42px, 8vw, 64px);
+  line-height: .9;
+  margin: 2px 10px 0 0;
+  color: var(--brand5);
+  text-shadow: 0 4px 0 rgba(0,0,0,.1);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:16px;
+}
+@media(min-width:860px){
+  .grid{ grid-template-columns: 1.2fr .8fr; }
+}
+
+.pillbox{
+  display:flex; flex-wrap:wrap; gap:10px;
+  margin: 10px 0 2px;
+}
+.pill{
+  font-family:"Fredoka", sans-serif;
+  font-weight:700;
+  font-size: 14px;
+  color:#1b1b1b;
+  background:#fff;
+  border:3px dashed #e7e7e7;
+  border-radius: 999px;
+  padding:8px 14px;
+  box-shadow: 0 4px 0 rgba(0,0,0,.06);
+}
+
+.badge{
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:10px;
+  background:#e9fff5;
+  border:2px solid #c9f5e5;
+  font-weight:700;
+  color:#0a694e;
+}
+
+.quote{
+  position:relative;
+  background: #f0f7ff;
+  border: 4px solid #d8ebff;
+  border-radius:18px;
+  padding:12px 14px 12px 52px;
+  margin:12px 0;
+}
+.quote::before{
+  content:"“";
+  position:absolute; left:12px; top:-6px;
+  font-family:"Fredoka", sans-serif;
+  font-size: 64px; line-height:1;
+  color:#9bc9ff;
+}
+
+.bullets{
+  background:#fff7fb;
+  border:4px solid #ffd9f0;
+  border-radius:18px;
+  padding:12px 16px;
+}
+.bullets ul{ margin:10px 0 0 20px; }
+
+.ribbon{
+  font-family:"Fredoka", sans-serif;
+  font-weight:800;
+  font-size: 18px;
+  display:inline-block;
+  background: linear-gradient(90deg, var(--brand2), var(--brand3));
+  color:#16423c;
+  padding:8px 14px;
+  border-radius:12px;
+  box-shadow: 0 6px 0 rgba(0,0,0,.07);
+  margin: 6px 0 10px;
+}
+
+.footer{
+  margin-top:18px;
+  font-size:14px;
+  color:var(--muted);
+}
+
+/* Kurangi gerak jika user pilih reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .kid-title{ animation:none }
+}
+</style>
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <div class="subtitle">Fase A (Usia 6–8 Tahun) • Kontekstual • Menyenangkan</div>
+    </header>
+
+    <section class="card">
+      <div class="grid">
+        <!-- Kolom kiri: narasi utama -->
+        <article>
+          <p class="lead"><span class="badge">Landasan</span> Pembagian tema/topik ini dilandasi oleh teori <strong>experiential learning</strong> (Dewey, 1938): anak belajar lebih efektif jika materi dikaitkan dengan pengalaman nyata.</p>
+
+          <p class="dropcap">
+            Tema yang paling dekat dengan anak—misalnya <em>alam</em>, <em>keluarga</em>, dan <em>lingkungan sekitar</em>—dapat digunakan sebagai <strong>jembatan</strong> antara keterampilan baca tulis dengan pengalaman hidup anak. Hal ini diperkuat oleh prinsip psikologi perkembangan anak (Piaget, 1938) tentang <strong>tahap operasional konkret</strong>: memahami konsep konkret lebih mudah dibanding abstrak. 
+          </p>
+
+          <div class="quote">
+            Bruner (1968) menekankan bahwa <strong>anak harus belajar melalui pengalaman konkret</strong>.
+          </div>
+
+          <p>
+            Anak membangun konsep literasi lewat pengalaman sehari-hari—melihat orang membaca koran, mendengar cerita, melihat papan nama, atau menulis coretan (Clay, 1970). Anak juga belajar dari <strong>interaksi sosial</strong> (Vygotsky, 1934).
+          </p>
+
+          <div class="quote">
+            Cambourne (1988): anak belajar membaca & menulis dalam <strong>lingkungan yang mendukung</strong>, kaya teks, dan memberi kesempatan berlatih.
+          </div>
+
+          <p>
+            Ausubel (1963) menegaskan pembelajaran lebih bermakna ketika <strong>informasi baru</strong> dihubungkan langsung dengan <strong>pengetahuan awal</strong> (prior knowledge).
+          </p>
+
+          <p>
+            <strong>Capaian Pembelajaran (CP) Fase A</strong> diarahkan pada penguasaan keterampilan berbahasa melalui tema yang kontekstual dan relevan dengan dunia anak. Oleh karena itu, tema seperti <em>Diriku, Keluargaku, Sekolahku, Lingkunganku, Alam & Hewan,</em> serta <em>Kegiatan Sehari-hari</em> dipilih dengan mempertimbangkan <strong>kedekatan</strong>, <strong>kebermaknaan</strong>, dan <strong>keterjangkauan</strong> pengalaman anak. Untuk Fase A, tema dipilih yang dekat dengan kehidupan sehari-hari dan sesuai perkembangan kognitif anak usia 6–8 tahun.
+          </p>
+        </article>
+
+        <!-- Kolom kanan: ringkasan warna-warni -->
+        <aside>
+          <div class="ribbon">Tokoh & Tahun</div>
+          <div class="pillbox" aria-label="Tokoh dan tahun">
+            <span class="pill">Dewey · 1938</span>
+            <span class="pill">Piaget · 1938</span>
+            <span class="pill">Bruner · 1968</span>
+            <span class="pill">Clay · 1970</span>
+            <span class="pill">Vygotsky · 1934</span>
+            <span class="pill">Cambourne · 1988</span>
+            <span class="pill">Ausubel · 1963</span>
+          </div>
+
+          <div class="ribbon" style="margin-top:14px;">Tema Dekat Anak</div>
+          <div class="bullets">
+            <ul>
+              <li><strong>Diriku</strong> & <strong>Keluargaku</strong></li>
+              <li><strong>Sekolahku</strong> & <strong>Lingkunganku</strong></li>
+              <li><strong>Alam & Hewan</strong></li>
+              <li><strong>Kegiatan Sehari-hari</strong></li>
+            </ul>
+          </div>
+
+          <div class="ribbon" style="margin-top:14px;">Prinsip Kunci</div>
+          <div class="pillbox">
+            <span class="pill">Konkret → Abstrak</span>
+            <span class="pill">Kontekstual</span>
+            <span class="pill">Interaksi Sosial</span>
+            <span class="pill">Lingkungan Kaya Teks</span>
+            <span class="pill">Hubungkan Prior Knowledge</span>
+          </div>
+        </aside>
+      </div>
+
+      <div class="footer">
+        © Bahan presentasi literasi • Desain HTML+CSS ramah anak, responsif, dan tanpa JavaScript.
+      </div>
+    </section>
+  </main>
+</body>
+</html>
